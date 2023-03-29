@@ -21,12 +21,14 @@ body {
   background: #ffffff;
   box-shadow: 0 8px 36px rgb(67 67 67 / 6%);
   border-radius: 15px;
-  height: 80vh;
-  margin-top: 10vh;
+  height: 60vh;
+  margin-top: 20vh;
 }
 
 .logo {
   position: absolute;
+  top: -15px;
+  left: 30%;
 }
 
 .app-info {
@@ -36,6 +38,8 @@ body {
   background-position: center center;
   text-align: center;
   border-radius: 15px;
+  margin-top: 25px;
+  padding: 30px;
 }
 
 .app-info-details {
@@ -64,8 +68,7 @@ body {
 
 .app-btn {
   text-decoration: none;
-  /* background: transparent; */
-  border: 1px #bebebe solid;
+  border: 1px #000000 solid;
   color: #000000;
   font-size: 12px;
   text-transform: uppercase;
@@ -89,6 +92,7 @@ body {
   color: #ffffff;
   background: #000000;
   border: 1px solid #000000;
+  margin-top: 5px;
 }
 
 .app-btn-fill:hover {
@@ -105,7 +109,7 @@ body {
 }
 
 form.form-group {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 form.form-group input {
@@ -141,7 +145,7 @@ form.form-group input {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-height: 60vh;
+  max-height: 100px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -166,4 +170,21 @@ form.form-group input {
   outline: none;
   cursor: pointer;
   background: transparent;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  .logo {
+    top: 20%;
+    left: 23.5%;
+  }
+
+  .app-info {
+    margin-top: 0;
+  }
+
+  .mt-md-6 {
+    margin-top: 20vh !important;
+  }
 }
