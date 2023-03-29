@@ -144,8 +144,8 @@ form.form-group input {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-height: 100px;
-  overflow-y: scroll;
+  max-height: 200px;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
