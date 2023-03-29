@@ -21,29 +21,31 @@
 
 <body>
 
-  <div class=" container">
+  <div class="container mt-0 mt-md-6">
     <div class="row h-100">
-      <div class="col-md-4 user-info">
-        <div class="logo">
+      <div class="col-md-4 user-info order-1 order-md-0">
+        <div class="logo d-none d-md-block">
           <a href="index.html"><img src="img/logo-black.png" alt="Logo" width="150"></a>
         </div>
-        <div class="h-100 d-flex ">
-          <div>
-            <h5>Make your list wisely, so that today will be a remarkable day for you!</h5>
-            <div class="date-time">
-              <span id="date">date</span>
-              <span id="month">month</span>
-              <span id="year">year</span>
-              <span id="weekday">weekday</span>
-            </div>
+        <div class="h-100 d-flex flex-column justify-content-end">
 
+          <h5>Make your list wisely, so that today will be a remarkable day for you!</h5>
+          <div class="date-time">
+            <span id="date">date</span>
+            <span id="month">month</span>
+            <span id="year">year</span>
+            <span id="weekday">weekday</span>
+          </div>
+
+          <div class="d-flex align-self-start mt-5">
             <button class="app-btn app-btn-fill logout" onclick="logout()">
               <i class="fa fa-sign-out-alt"></i>Logout
             </button>
           </div>
         </div>
+
       </div>
-      <div class="col-md-8 p-5">
+      <div class="col-md-8 p-4 p-md-5 bg-white order-0 order-md-1">
         <!-- Todo container -->
         <h5>Pendings here...</h5>
         <div class="todo-container" id="todo-container">
